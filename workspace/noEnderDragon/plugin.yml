@@ -1,0 +1,16 @@
+name: NoEnderDragon
+version: 1.3
+main: me.damo1995.NoEnderDragons.NoEnderDragons
+author: damo1995
+description: A simple plugin to block Enderdragons griefing/spawning.
+commands:
+   ned:
+       description: 'General NoEnderDragon Commands'
+       usage: /ned /ned reload
+permissions:
+  ned.*:
+    description: Gives access to all SnowballFight commands
+    children:
+      ned.reload: true
+  ned.reload:
+    description: Gives access to reload command.
